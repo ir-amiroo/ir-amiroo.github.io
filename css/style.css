@@ -1,17 +1,109 @@
-@font-face {
-  src:url('https://fonts.googleapis.com/css?family=Special+Elite&display=swap');
-  font-family: TypeWriter;
-}
-body{
-  width: 100% ;
-  font-family: TypeWriter;
+body {
+    width: 100%;
+    font-family: 'Roboto Mono', monospace;
+    color:#c3c3c3;
+    scroll-behavior: smooth;
 }
 
-.main-div{
-  height:100% ;
-  width: 100% ;
+.main-div {
+    height: 100%;
+    width: 100%;
 }
-.top-section{
-  background-color: #121212;
-  min-height: 600px;
+
+#top-section {
+    background-color: #121212;
+    min-height: 600px;
 }
+#bottom-section {
+    background-image: linear-gradient(315deg, #254A8F, #A44962, #F4475E);
+    min-height: 600px;
+}
+
+#top-section .mid {
+    min-height: 250px;
+    margin-top: 135px;
+    text-align: center;
+}
+
+.text {
+    margin: 60px auto 20px;
+
+    height: 180px;
+
+    width: 268px;
+
+    font-size: 32px;
+
+    color: #c3c3c3;
+
+}
+
+@keyframes buttonAnimation {
+
+    0%,
+    to {
+        background-image: linear-gradient(315deg, #254A8F, #A44962, #F4475E)
+    }
+
+    33% {
+        background-image: linear-gradient(315deg,  #F4475E, #254A8F, #A44962)
+    }
+
+/*
+    50% {
+        background-image: linear-gradient(315deg, #3f0d12, #a71d31)
+    }
+*/
+
+    66% {
+        background-image: linear-gradient(315deg, #A44962, #F4475E,#254A8F)
+    }
+}
+
+.button {
+    margin: 10px;
+    text-align: center;
+    position: relative;
+    border-radius: 20px;
+    box-sizing: border-box;
+    color: #c3c3c3;
+    display: inline-block;
+    animation: buttonAnimation 0.7s linear infinite;
+    transition: background 1s ease;
+
+}
+
+.button span {
+    padding: 20px;
+    background: #121212;
+    border-radius: 20px;
+    display: inline-block;
+    justify-content: center;
+    margin: 3px;
+    box-sizing: border-box;
+    transition: background 1s ease;
+
+}
+
+
+.button:hover {
+    animation: none;
+    color: aliceblue;
+    background-color: #3f0d12;
+    background-image: linear-gradient(315deg, #254A8F, #A44962, #F4475E)
+}
+.button:hover span{
+    color: aliceblue;
+    
+    background-image: linear-gradient(315deg, #254A8F, #A44962, #F4475E);
+}
+.container svg {
+	display: block;
+}
+
+#curveDownColor{
+    position: absolute;
+
+}
+
+
