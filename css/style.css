@@ -1,8 +1,21 @@
-.container{
+@font-face {
+  src:url('https://fonts.googleapis.com/css?family=Special+Elite&display=swap');
+  font-family: TypeWriter;
+}
+body{
+  width: 100% ;
+  font-family: TypeWriter;
+}
+
+.main-div{
   height:100% ;
   width: 100% ;
 }
 .top-section{
-    background-color: red !important;
+    background-color: #333 !important;
+
+}
+.top-section{
+  background-color: #ddd !important;
 
 }
